@@ -1,0 +1,18 @@
+meta {
+  name: Generate Embeddings (Single)
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:11434/api/embed
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "model": "nomic-embed-text",
+    "input": "Why is the sky blue?"
+  }
+}

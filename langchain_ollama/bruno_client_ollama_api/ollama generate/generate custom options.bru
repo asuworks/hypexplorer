@@ -1,0 +1,22 @@
+meta {
+  name: generate custom options
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:11434/api/generate
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "model": "llama3.2",
+    "prompt": "Why is the sky blue?",
+    "options": {
+      "seed": 123
+    },
+    "stream": false
+  }
+}

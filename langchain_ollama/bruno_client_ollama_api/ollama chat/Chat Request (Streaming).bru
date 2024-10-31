@@ -1,0 +1,23 @@
+meta {
+  name: Chat Request (Streaming)
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:11434/api/chat
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "model": "llama3.2",
+    "messages": [
+      {
+        "role": "user",
+        "content": "why is the sky blue?"
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+meta {
+  name: generate json output
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:11434/api/generate
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "model": "llama3.1",
+    "prompt": "What color is the sky at different times of the day? Respond using JSON",
+    "format": "json",
+    "options": {
+      "temperature": 0
+    },
+    "stream": false
+  }
+}

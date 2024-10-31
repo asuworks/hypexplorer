@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "ollama admin tasks",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
