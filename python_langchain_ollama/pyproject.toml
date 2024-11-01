@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "langchain-ollama-project"
+version = "0.1.0"
+description = ""
+authors = ["Anton Suharev <asuharev@asu.edu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.32.3"
+langchain-ollama = "^0.2.0"
+langchain-core = "^0.3.15"
+pydantic = "^2.9.2"
+python-dotenv = "^1.0.1"
+ollama = "^0.3.3"
+openai = "^1.53.0"
+instructor = "^1.6.3"
+ollama-instructor = "^0.5.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

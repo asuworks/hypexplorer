@@ -55,6 +55,7 @@ cover/
 *.profraw
 
 # mypy
++
 .mypy_cache/
 
 # Jupyter Notebook
